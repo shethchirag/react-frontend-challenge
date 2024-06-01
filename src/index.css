@@ -1,0 +1,112 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1px;
+  text-align: center;
+  box-shadow: 0px 10px 15px -3px rgb(67 67 67 / 10%);
+}
+
+h1 {
+  padding: 0;
+  margin: 15px;
+}
+.card {
+  width: 320px;
+  height: 230px;
+  background: #c5c5c5;
+  border-radius: 10px;
+  margin-inline: auto;
+  padding: 30px;
+  margin-block: 25px;
+}
+.card p {
+  font-size: 2.5rem;
+  margin: 15px;
+}
+button.plus-btn,
+.minus-btn {
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: navajowhite;
+  cursor: pointer;
+  background-color: green;
+  font-size: 25px;
+}
+.input-field {
+  margin-block: 25px;
+}
+label {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+input#userNumber {
+  border-radius: 5px;
+  border: 1px;
+  width: 70%;
+  height: 35px;
+  padding-inline-start: 10px;
+}
+
+.reset-btn {
+  width: 100px;
+  height: 27px;
+  border-radius: 5px;
+  outline: none;
+  border: navajowhite;
+  cursor: pointer;
+  background-color: green;
+  font-size: 20px;
+  margin: auto;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.project-list {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.2s ease-in-out;
+}
+.project-card:hover {
+  box-shadow: 0 6px 8px #0000004d;
+  transform: scale(1.05);
+}
+a.backBtn {
+  position: absolute;
+  color: black;
+  font-size: 45px;
+  left: 10px;
+  top: 5px;
+}
+.project-card a {
+  text-decoration-line: none;
+  background-color: #00800030;
+  color: #0b0b0b;
+  padding: 5px;
+  border-radius: 7px;
+}
