@@ -1,5 +1,4 @@
 import { Suspense, lazy } from "react";
-import { ThreeCircles, Watch } from "react-loader-spinner";
 import { useParams } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 
@@ -11,6 +10,10 @@ const projects = {
   2: {
     component: lazy(() => import("../components/program-multiverse")),
     title: "Counter",
+  },
+  3: {
+    component: lazy(() => import("../components/anagramChecker")),
+    title: "Anagram Checker",
   },
 };
 

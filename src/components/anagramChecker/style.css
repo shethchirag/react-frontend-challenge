@@ -1,0 +1,41 @@
+/* style.css */
+.cardAnagram {
+  max-width: 500px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  margin-inline: auto;
+  margin-block: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* This makes the card take full viewport height */
+}
+
+.card-content-anagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Adds some spacing between the elements */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.card-content-anagram input {
+  padding: 10px;
+  width: 200px; /* Sets a width for the input fields */
+  margin-bottom: 10px; /* Adds spacing between input fields and the button */
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(0, 128, 0, 0.37);
+}
+
+.card-content-anagram button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}

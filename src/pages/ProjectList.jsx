@@ -12,6 +12,13 @@ const projects = [
     description:
       "web application that displays programming languages' details ",
   },
+
+  {
+    id: 3,
+    title: "Anagram Checker",
+    description:
+      "Two words are anagrams of each other if they contain the same number of characters and the same characters.",
+  },
 ];
 
 const ProjectList = () => {

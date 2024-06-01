@@ -8,7 +8,6 @@ const Header = () => {
   let projectName;
   if (paramId) {
     const title = location.state.filter((data) => data.id === paramId);
-    console.dir(title[0].title);
     projectName = title[0].title;
   }
 
