@@ -15,6 +15,11 @@ const projects = {
     component: lazy(() => import("../components/anagramChecker")),
     title: "Anagram Checker",
   },
+
+  4: {
+    component: lazy(() => import("../components/quoteGenerator")),
+    title: "QuoteGenerator",
+  },
 };
 
 const ProjectPage = () => {

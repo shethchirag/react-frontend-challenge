@@ -1,0 +1,42 @@
+.card-container {
+  max-width: 1280px;
+  margin: auto;
+  background-color: #000000d6;
+  color: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-block: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  min-height: 200px;
+}
+input[type="text"] {
+  width: 20%;
+  height: 35px;
+  border-radius: 10px;
+  padding-inline: 20px;
+  margin-inline: 10px;
+  border: 0;
+}
+.generate-btn {
+  border-radius: 10px;
+  padding: 10px;
+  margin-block-start: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.loading-style {
+  height: 10px;
+}
+
+@media (max-width: 1000px) {
+  .card-container {
+    margin: 20px;
+  }
+  input[type="text"] {
+    width: 70%;
+    display: block;
+    margin: 0;
+  }
+}
