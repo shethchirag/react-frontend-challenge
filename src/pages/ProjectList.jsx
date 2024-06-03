@@ -15,9 +15,9 @@ const projects = [
 
   {
     id: 3,
-    title: "Programming Multiverse",
+    title: "Anagram Checker",
     description:
-      "web application that displays programming languages' details ",
+      "Two words are anagrams of each other if they contain the same number of characters and the same characters",
   },
 
   {
@@ -25,6 +25,12 @@ const projects = [
     title: "QuoteGenerator",
     description:
       "capable of pulling quotes randomly from an API, a database, or simply from an array.",
+  },
+
+  {
+    id: 5,
+    title: "Image Gallery",
+    description: "A Simple Images Gallery Click on images and view Image",
   },
 ];
 

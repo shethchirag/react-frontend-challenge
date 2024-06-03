@@ -20,6 +20,10 @@ const projects = {
     component: lazy(() => import("../components/quoteGenerator")),
     title: "QuoteGenerator",
   },
+  5: {
+    component: lazy(() => import("../components/ImageGallery")),
+    title: "ImageGallery",
+  },
 };
 
 const ProjectPage = () => {
