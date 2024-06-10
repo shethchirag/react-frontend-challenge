@@ -24,6 +24,10 @@ const projects = {
     component: lazy(() => import("../components/ImageGallery")),
     title: "ImageGallery",
   },
+  6: {
+    component: lazy(() => import("../components/Accordion")),
+    title: "Accordion",
+  },
 };
 
 const ProjectPage = () => {

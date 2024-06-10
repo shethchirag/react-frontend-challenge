@@ -26,11 +26,15 @@ const projects = [
     description:
       "capable of pulling quotes randomly from an API, a database, or simply from an array.",
   },
-
   {
     id: 5,
     title: "Image Gallery",
     description: "A Simple Images Gallery Click on images and view Image",
+  },
+  {
+    id: 6,
+    title: "Accordion",
+    description: "Accordion",
   },
 ];
 
