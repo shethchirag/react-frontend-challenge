@@ -28,6 +28,10 @@ const projects = {
     component: lazy(() => import("../components/Accordion")),
     title: "Accordion",
   },
+  7: {
+    component: lazy(() => import("../components/BackgroundChanger")),
+    title: "Background Changer",
+  },
 };
 
 const ProjectPage = () => {

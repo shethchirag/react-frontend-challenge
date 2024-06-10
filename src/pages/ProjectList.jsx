@@ -36,6 +36,11 @@ const projects = [
     title: "Accordion",
     description: "Accordion",
   },
+  {
+    id: 7,
+    title: "Background Changer",
+    description: "change a Random Background",
+  },
 ];
 
 const ProjectList = () => {
