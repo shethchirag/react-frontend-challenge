@@ -1,0 +1,42 @@
+.dark {
+  background-color: black;
+  color: white;
+  transition: background-color 0.9s, transform 0.5s;
+}
+.main-container {
+  text-align: center;
+  height: calc(100vh - 8.5vh);
+}
+h2.text-h2 {
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+}
+.light {
+  background-color: white;
+  color: black;
+  transition: background-color 0.9s, transform 0.5s;
+}
+.bg-btn {
+  padding: 10px 20px;
+  margin: 2rem auto;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+}
+.main-container.light .bg-btn {
+  background-color: black;
+  color: white;
+}
+.main-container-bg {
+  text-align: center;
+}
+
+.bg-btn:active {
+  transform: scale(0.95);
+}

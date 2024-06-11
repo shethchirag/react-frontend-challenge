@@ -32,6 +32,14 @@ const projects = {
     component: lazy(() => import("../components/BackgroundChanger")),
     title: "Background Changer",
   },
+  8: {
+    component: lazy(() => import("../components/LightDarkMode")),
+    title: "Light Dark Mode",
+  },
+  9: {
+    component: lazy(() => import("../components/QrCodeGenerator")),
+    title: "QR generator",
+  },
 };
 
 const ProjectPage = () => {

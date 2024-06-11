@@ -41,6 +41,17 @@ const projects = [
     title: "Background Changer",
     description: "change a Random Background",
   },
+  {
+    id: 8,
+    title: "Light Dark Mode",
+    description: "change theme mode",
+  },
+
+  {
+    id: 9,
+    title: "QrCodeGenerator",
+    description: "Generate Qr Code from user input",
+  },
 ];
 
 const ProjectList = () => {
