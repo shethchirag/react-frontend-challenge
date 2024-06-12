@@ -44,6 +44,10 @@ const projects = {
     component: lazy(() => import("../components/TableColorizer")),
     title: "Table Colorizer",
   },
+  11: {
+    component: lazy(() => import("../components/pagination")),
+    title: "Pagination",
+  },
 };
 
 const ProjectPage = () => {

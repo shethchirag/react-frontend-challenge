@@ -58,6 +58,11 @@ const projects = [
     title: "TableColorizer",
     description: "Table Colorizer input number to add color ",
   },
+  {
+    id: 11,
+    title: "Pagination",
+    description: "pagination ",
+  },
 ];
 
 const ProjectList = () => {

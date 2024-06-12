@@ -1,0 +1,28 @@
+.table-container {
+  max-width: 500px;
+  margin: auto;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 25px;
+  caret-color: transparent;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(3, 177, 3);
+  text-align: center;
+  height: 40px;
+  border-radius: 10px;
+}
+table {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+th {
+  background-color: green;
+  color: white;
+}
+table {
+  width: 100%;
+}
