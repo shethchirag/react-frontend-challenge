@@ -40,6 +40,10 @@ const projects = {
     component: lazy(() => import("../components/QrCodeGenerator")),
     title: "QR generator",
   },
+  10: {
+    component: lazy(() => import("../components/TableColorizer")),
+    title: "Table Colorizer",
+  },
 };
 
 const ProjectPage = () => {

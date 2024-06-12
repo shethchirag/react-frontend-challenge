@@ -52,6 +52,12 @@ const projects = [
     title: "QrCodeGenerator",
     description: "Generate Qr Code from user input",
   },
+
+  {
+    id: 10,
+    title: "TableColorizer",
+    description: "Table Colorizer input number to add color ",
+  },
 ];
 
 const ProjectList = () => {
