@@ -113,6 +113,6 @@
     flex-direction: column;
   }
   .inp-value {
-    width: 100%;
+    width: 75%;
   }
 }
