@@ -48,6 +48,10 @@ const projects = {
     component: lazy(() => import("../components/pagination")),
     title: "Pagination",
   },
+  12: {
+    component: lazy(() => import("../components/Stack")),
+    title: "Stack",
+  },
 };
 
 const ProjectPage = () => {
