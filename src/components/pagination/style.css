@@ -1,6 +1,12 @@
 .table-container {
   max-width: 500px;
   margin: auto;
+  margin-block: 25px;
+  caret-color: transparent;
+}
+.table-part {
+  max-width: 500px;
+  margin: auto;
   /* text-align: center; */
   display: flex;
   justify-content: center;
@@ -25,4 +31,57 @@ th {
 }
 table {
   width: 100%;
+}
+.table-btn {
+  display: flex;
+  justify-content: block;
+  gap: 10px;
+  justify-content: center;
+}
+
+.table-btn button {
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  background-color: green;
+  color: white;
+  margin-right: 10px;
+  caret-color: transparent;
+}
+
+.table-btn button:active {
+  transform: scale(0.95);
+}
+.table-btn button:disabled {
+  background-color: rgb(155, 155, 155);
+  cursor: not-allowed;
+}
+.item-parPage {
+  caret-color: auto;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .table-btn button {
+    padding: 0px 10px;
+  }
+  .item-parPage {
+    max-width: 80px;
+  }
+  .table-btn {
+    align-items: center;
+  }
+  .table-btn p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .table-container {
+    padding: 15px;
+  }
 }

@@ -174,4 +174,29 @@ export const FOODS = [
     name: "Chocolate Fondue",
     price: 20,
   },
+  {
+    id: 36,
+    name: "Churros",
+    price: 7,
+  },
+  {
+    id: 37,
+    name: "Baklava",
+    price: 9,
+  },
+  {
+    id: 38,
+    name: "Tiramisu",
+    price: 12,
+  },
+  {
+    id: 39,
+    name: "Cheesecake",
+    price: 18,
+  },
+  {
+    id: 40,
+    name: "Chocolate Fondue",
+    price: 20,
+  },
 ];
