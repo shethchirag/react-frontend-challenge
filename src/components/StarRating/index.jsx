@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
@@ -19,9 +19,9 @@ const StarRating = () => {
   const handleMouseLeave = () => {
     setHover(null);
   };
-  useState(() => {
+  useEffect(() => {
     setRating(JSON.parse(localStorage.getItem("testObject")));
-  });
+  }, []);
 
   return (
     <div className="star-container">
