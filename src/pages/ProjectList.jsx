@@ -83,6 +83,11 @@ const projects = [
     title: "Tic Tac Toe",
     description: "TicTacToe",
   },
+  {
+    id: 16,
+    title: "Expense Tracker",
+    description: "Track your Expense",
+  },
 ];
 
 const ProjectList = () => {

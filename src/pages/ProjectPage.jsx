@@ -66,6 +66,11 @@ const projects = {
     component: lazy(() => import("../components/TicTacToe")),
     title: "Tic Tac Toe",
   },
+
+  16: {
+    component: lazy(() => import("../components/ExpenseTracker")),
+    title: "Expense Tracker",
+  },
 };
 
 const ProjectPage = () => {

@@ -1,0 +1,79 @@
+.expense-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 37px;
+}
+.expense-input-container {
+  width: 100%;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.expense-input-container input,
+.form-select {
+  width: 70%;
+  margin: auto;
+  margin-block: 10px;
+}
+.expense-input-container input,
+.form-select {
+  width: 70%;
+  margin: auto;
+  margin-block: 8px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(0, 128, 0, 0.234);
+  padding-inline: 10px;
+  transition: background-color 0.9s, color 0.9s, font-size 0.2s, transform 0.5s;
+}
+.expense-input-container input:focus,
+.form-select:focus {
+  outline: none;
+  background-color: black;
+  color: white;
+  transition: background-color 0.9s, font-size 0.2s, transform 0.5s;
+  font-size: larger;
+}
+.expense-input-container input::placeholder,
+.form-select::placeholder {
+  color: black;
+  transition: color 0.9s, font-size 0.2s, transform 0.5s;
+  font-size: 15px;
+}
+.expense-input-container input:focus::placeholder,
+.form-select:focus::placeholder {
+  color: white;
+  transition: color 0.9s, font-size 0.2s, transform 0.5s;
+  font-size: 20px;
+}
+.form-select {
+  appearance: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  font-size: 20px;
+}
+.add-Expense {
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  background-color: green;
+  color: white;
+  margin-block: 15px;
+}
+
+.add-Expense:active {
+  transform: scale(0.95);
+}
