@@ -61,6 +61,11 @@ const projects = {
     component: lazy(() => import("../components/Telephoneformatter")),
     title: "Telephone formatter",
   },
+
+  15: {
+    component: lazy(() => import("../components/TicTacToe")),
+    title: "Tic Tac Toe",
+  },
 };
 
 const ProjectPage = () => {

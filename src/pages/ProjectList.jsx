@@ -78,6 +78,11 @@ const projects = [
     title: "Telephone formatter",
     description: "Telephone formatter",
   },
+  {
+    id: 15,
+    title: "Tic Tac Toe",
+    description: "TicTacToe",
+  },
 ];
 
 const ProjectList = () => {
