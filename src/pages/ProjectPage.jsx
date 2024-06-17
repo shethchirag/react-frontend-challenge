@@ -56,6 +56,11 @@ const projects = {
     component: lazy(() => import("../components/StarRating")),
     title: "StarRating",
   },
+
+  14: {
+    component: lazy(() => import("../components/Telephoneformatter")),
+    title: "Telephone formatter",
+  },
 };
 
 const ProjectPage = () => {
