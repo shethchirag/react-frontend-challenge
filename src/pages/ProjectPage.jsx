@@ -52,6 +52,10 @@ const projects = {
     component: lazy(() => import("../components/Stack")),
     title: "Stack",
   },
+  13: {
+    component: lazy(() => import("../components/StarRating")),
+    title: "StarRating",
+  },
 };
 
 const ProjectPage = () => {
