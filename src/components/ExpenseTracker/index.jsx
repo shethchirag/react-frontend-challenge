@@ -5,6 +5,7 @@ const ExpenseTracker = () => {
   const [expenseData, setExpenseData] = useState([]);
   const [errorMessage, setErrorMessage] = useState({});
   const [totalExpense, setTotalExpense] = useState(0);
+  const [editRowId, SetEditRowId] = useState("");
   const [expense, SetExpense] = useState({
     date: "",
     amount: "",
@@ -34,10 +35,29 @@ const ExpenseTracker = () => {
 
     const error = errorHandler(expense);
     if (Object.keys(error).length) return;
-    setExpenseData((prev) => [
-      ...prev,
-      { ...expense, id: crypto.randomUUID() },
-    ]);
+
+    if (editRowId) {
+      setExpenseData((prevData) => {
+        const updatedData = prevData.map((editExp) => {
+          if (editExp.id === editRowId) {
+            return { ...expense, id: editRowId };
+          } else {
+            return editExp;
+          }
+        });
+        saveLocalStorage(updatedData);
+        return updatedData;
+      });
+
+      SetEditRowId("");
+      SetExpense({ date: "", amount: "", categories: "" });
+      return;
+    }
+
+    const newExpense = { ...expense, id: crypto.randomUUID() };
+    const updatedData = [...expenseData, newExpense];
+    setExpenseData(updatedData);
+    saveLocalStorage(updatedData);
     SetExpense({ date: "", amount: "", categories: "" });
   };
   const expenseHandler = (e) => {
@@ -48,7 +68,20 @@ const ExpenseTracker = () => {
 
   const handleDelete = (id) => {
     const deleteData = expenseData.filter((expense) => expense.id !== id);
+    saveLocalStorage(deleteData);
     setExpenseData(deleteData);
+  };
+  const handleUpdate = (id) => {
+    const updatedData = expenseData.find((expense) => expense.id === id);
+
+    SetExpense({
+      date: updatedData.date,
+      amount: updatedData.amount,
+      categories: updatedData.categories,
+    });
+    SetEditRowId(updatedData.id);
+    setErrorMessage({});
+    // setExpenseData(deleteData);
   };
   useEffect(() => {
     const totalExpense = expenseData.reduce((acc, value) => {
@@ -56,6 +89,21 @@ const ExpenseTracker = () => {
     }, 0);
     setTotalExpense(totalExpense);
   }, [expenseData]);
+
+  useEffect(() => {
+    const savedExpenses = getLocalStorage();
+    if (savedExpenses) {
+      setExpenseData(savedExpenses);
+    }
+  }, []);
+
+  const saveLocalStorage = (data) => {
+    localStorage.setItem("expenseData", JSON.stringify(data));
+  };
+  const getLocalStorage = () => {
+    const savedExpenses = localStorage.getItem("expenseData");
+    return savedExpenses ? JSON.parse(savedExpenses) : [];
+  };
 
   return (
     <div className="expense-container">
@@ -76,7 +124,7 @@ const ExpenseTracker = () => {
               name="amount"
               value={expense.amount}
               onChange={expenseHandler}
-              placeholder="enter Amount"
+              placeholder="Enter Amount"
             />
             <p className="error-style">{errorMessage.amount}</p>
             <select
@@ -96,7 +144,9 @@ const ExpenseTracker = () => {
             </select>
             <p className="error-style">{errorMessage.categories}</p>
             <div>
-              <button className="add-Expense">Add Expense</button>
+              <button className="add-Expense">
+                {editRowId ? "save" : "Add Expense"}
+              </button>
             </div>
           </form>
         </div>
@@ -115,19 +165,28 @@ const ExpenseTracker = () => {
           <h3>Expenses</h3>
           <hr />
           {expenseData.length ? (
-            expenseData.map((entry, index) => (
-              <>
-                <div className="exp-text" key={index}>
+            expenseData.map((entry) => (
+              <div key={entry.id}>
+                <div className="exp-text">
                   <p>{`${entry.date} - ₹ ${entry.amount} - ${entry.categories}`}</p>
-                  <button
-                    onClick={() => handleDelete(entry.id)}
-                    className="delete-btn"
-                  >
-                    Delete
-                  </button>
+                  <div className="update-delete">
+                    <button
+                      onClick={() => handleUpdate(entry.id)}
+                      className="delete-btn"
+                      style={{ marginInline: "10px", backgroundColor: "grey" }}
+                    >
+                      Update
+                    </button>
+                    <button
+                      onClick={() => handleDelete(entry.id)}
+                      className="delete-btn"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
                 <hr />
-              </>
+              </div>
             ))
           ) : (
             <div className="exp-text">

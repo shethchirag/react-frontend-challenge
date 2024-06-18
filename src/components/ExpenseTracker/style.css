@@ -62,12 +62,6 @@
 }
 .form-select {
   appearance: none;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
-  font-size: 20px;
 }
 .add-Expense {
   padding: 8px 18px;
