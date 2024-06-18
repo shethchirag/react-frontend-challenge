@@ -1,15 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
 .expense-container {
-  max-width: 500px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
   padding: 37px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.expense-input-container {
+
+.expense-input-container,
+.expense-show-container,
+.expense-summary-container {
   width: 100%;
   margin: auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 25px;
   border-radius: 10px;
+  margin-block: 20px;
 }
 .expense-input-container input,
 .form-select {
@@ -19,7 +29,7 @@
 }
 .expense-input-container input,
 .form-select {
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-block: 8px;
   height: 40px;
@@ -76,4 +86,59 @@
 
 .add-Expense:active {
   transform: scale(0.95);
+}
+.delete-btn {
+  padding: 5px 8px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  background-color: rgb(128, 0, 15);
+  color: white;
+  margin-block: 15px;
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+.expense-show-container > h3 {
+  margin: 0;
+}
+.right {
+  max-height: 530px;
+}
+.left {
+  width: 50%;
+}
+.right {
+  max-height: 530px;
+  width: 500px;
+}
+.exp-text {
+  display: flex;
+  justify-content: space-between;
+}
+.error-style {
+  color: red;
+  top: 100%;
+  margin: 0px;
+  text-align: left;
+  font-size: 11px;
+  margin-inline-start: 10px;
+}
+@media (max-width: 800.98px) {
+  .right {
+    max-height: 530px;
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+  .expense-container {
+    flex-direction: column;
+  }
 }
