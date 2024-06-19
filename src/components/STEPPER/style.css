@@ -31,15 +31,15 @@
   border-radius: 10px;
   /* margin: auto; */
   position: absolute;
-  width: calc(100% - 20px);
-  margin-left: 10px;
+  width: calc(100% - 300px);
+  margin-left: 150px;
   top: 15px;
 }
 .progress-bar {
   width: 100%;
   background-color: green;
   height: 100%;
-  transition: width 0.3s;
+  transition: width 0.8s;
 }
 .stepper-btn {
   padding: 5px 20px;
@@ -58,5 +58,41 @@
 }
 
 .stepper-btn:active {
+  transform: scale(0.95);
+}
+.stepper-span.activeSpan span {
+  background-color: #131435;
+  transition: transform 0.3s, background-color 2s;
+}
+
+.stepper-text {
+  flex-grow: 0;
+  margin-block: 10px;
+}
+.stepper-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.stepper-end {
+  margin-block: 25px;
+}
+.order-again {
+  padding: 5px 20px;
+  width: 100px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  background-color: green;
+  color: white;
+  margin: auto;
+}
+
+.order-again:active {
   transform: scale(0.95);
 }

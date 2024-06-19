@@ -1,6 +1,20 @@
 import { useState } from "react";
 import "./style.css";
 
+const stepperArray = [
+  { id: 0, message: "Contact Details" },
+  { id: 1, message: "Shipping Address" },
+  { id: 2, message: "Payment" },
+  { id: 3, message: "Delivered" },
+];
+const orderMessage = [
+  "Add contact details for further communications.",
+  "Add shipping address for successfull delivery.",
+  "Complete Payment to complete the order.",
+  "Ready to get delivered!",
+  "Order Delivered successfully!🎉",
+];
+
 const Stepper = () => {
   const [step, setStep] = useState(0);
 
@@ -15,24 +29,24 @@ const Stepper = () => {
   const getProgressWidth = () => {
     return ((step < steps - 1 ? step : steps - 1) / (steps - 1)) * 100;
   };
-
+  console.log(step, steps);
   return (
     <div className="stepper-container">
       <h2>Stepper Component</h2>
       <div className="stepper-part">
-        {[...Array(steps)].map((_, index) => (
+        {stepperArray.map((item, index) => (
           <div
             key={index}
             className={`stepper-1 ${
               step > index ? "completed" : step === index ? "active" : ""
             }`}
           >
-            <div className="stepper-span">
+            <div
+              className={`stepper-span  ${step === index ? "activeSpan" : ""}`}
+            >
               <span>{step > index ? "✔" : index + 1}</span>
             </div>
-            <div className="stepper-text">
-              <p>Step {index + 1}</p>
-            </div>
+            <div className="stepper-text">{item.message}</div>
           </div>
         ))}
 
@@ -41,19 +55,24 @@ const Stepper = () => {
             className="progress-bar"
             style={{
               width: `${getProgressWidth()}%`,
-              transform: "scale(0.95)",
+              transform: "scale(0.950)",
             }}
           ></div>
         </div>
       </div>
-      {step === steps && (
-        <div className="stepper-end">
-          <h3>Order Delivered successfully!🎉</h3>
-        </div>
-      )}
+
+      <div className="stepper-end">
+        <h3> {orderMessage[step]}</h3>
+      </div>
+
       {step < steps && (
         <div onClick={stepperHandler} className="stepper-btn">
           {step === steps - 1 ? "Finish" : "Next"}
+        </div>
+      )}
+      {step === steps && (
+        <div onClick={() => setStep(0)} className="order-again">
+          Order Again
         </div>
       )}
     </div>
