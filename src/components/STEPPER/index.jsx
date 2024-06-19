@@ -18,7 +18,7 @@ const orderMessage = [
 const Stepper = () => {
   const [step, setStep] = useState(0);
 
-  const steps = 4; // Total number of steps
+  const steps = stepperArray.length; // Total number of steps
 
   const stepperHandler = () => {
     if (step < steps) {
