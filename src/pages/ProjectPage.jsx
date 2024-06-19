@@ -71,6 +71,10 @@ const projects = {
     component: lazy(() => import("../components/ExpenseTracker")),
     title: "Expense Tracker",
   },
+  17: {
+    component: lazy(() => import("../components/STEPPER")),
+    title: "Stepper",
+  },
 };
 
 const ProjectPage = () => {
