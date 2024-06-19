@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: baseline;
   position: relative;
+  max-width: 1290px;
 }
 .stepper-part span {
   width: 38px;

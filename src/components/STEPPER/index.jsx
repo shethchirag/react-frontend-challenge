@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./style.css";
 
 const stepperArray = [
@@ -17,6 +17,9 @@ const orderMessage = [
 
 const Stepper = () => {
   const [step, setStep] = useState(0);
+  const [margin, setMargin] = useState(0);
+  // Here, we are storing any one of the step (all are of same width i.e. flex:1) so that we can persist it throughout the renders
+  const stepRef = useRef(null);
 
   const steps = stepperArray.length; // Total number of steps
 
@@ -29,6 +32,18 @@ const Stepper = () => {
   const getProgressWidth = () => {
     return ((step < steps - 1 ? step : steps - 1) / (steps - 1)) * 100;
   };
+  // Setting an event handler for window resizing for the responsiveness of out app
+  useEffect(() => {
+    setMargin(stepRef.current.offsetWidth / 2);
+    console.log(stepRef.current.offsetWidth);
+    window.addEventListener("resize", () => {
+      setMargin(stepRef.current.offsetWidth / 1.5);
+    });
+
+    return window.removeEventListener("resize", () => {
+      setMargin(stepRef.current.offsetWidth / 2);
+    });
+  }, []);
   console.log(step, steps);
   return (
     <div className="stepper-container">
@@ -36,6 +51,7 @@ const Stepper = () => {
       <div className="stepper-part">
         {stepperArray.map((item, index) => (
           <div
+            ref={stepRef}
             key={index}
             className={`stepper-1 ${
               step > index ? "completed" : step === index ? "active" : ""
@@ -50,12 +66,17 @@ const Stepper = () => {
           </div>
         ))}
 
-        <div className="stepper-bar">
+        <div
+          className="stepper-bar"
+          style={{
+            width: `calc(100% - ${margin * 2}px)`,
+            marginLeft: margin,
+          }}
+        >
           <div
             className="progress-bar"
             style={{
               width: `${getProgressWidth()}%`,
-              transform: "scale(0.950)",
             }}
           ></div>
         </div>
