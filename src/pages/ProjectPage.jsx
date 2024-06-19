@@ -80,6 +80,10 @@ const projects = {
     component: lazy(() => import("../components/Tab")),
     title: "Tab",
   },
+  19: {
+    component: lazy(() => import("../components/Calculator")),
+    title: "Calculator",
+  },
 };
 
 const ProjectPage = () => {
