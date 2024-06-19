@@ -93,6 +93,11 @@ const projects = [
     title: "Stepper",
     description: "Track your step",
   },
+  {
+    id: 18,
+    title: "Tab",
+    description: "Tab",
+  },
 ];
 
 const ProjectList = () => {

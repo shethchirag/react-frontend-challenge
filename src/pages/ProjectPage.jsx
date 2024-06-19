@@ -75,6 +75,11 @@ const projects = {
     component: lazy(() => import("../components/STEPPER")),
     title: "Stepper",
   },
+
+  18: {
+    component: lazy(() => import("../components/Tab")),
+    title: "Tab",
+  },
 };
 
 const ProjectPage = () => {

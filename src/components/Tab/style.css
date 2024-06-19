@@ -1,0 +1,29 @@
+.tab-container {
+  max-width: 700px;
+  margin: auto;
+  margin-block: 40px;
+}
+.tab-part span {
+  width: 70px;
+  display: inline-block;
+  height: 25px;
+  background-color: rgb(0, 255, 81);
+  border-radius: 10px;
+  padding: 6px;
+  cursor: pointer;
+}
+.tab-part span {
+  margin-inline-end: 25px;
+}
+.tab-part {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tab-part span.active {
+  background-color: black;
+  color: white;
+  transition: transform 0.3s, background-color 0.3s;
+}
