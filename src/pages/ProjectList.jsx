@@ -108,6 +108,11 @@ const projects = [
     title: "ColorMixer",
     description: "Mix Two Color",
   },
+  {
+    id: 21,
+    title: "Traffic Lights",
+    description: "Traffic Lights",
+  },
 ];
 
 const ProjectList = () => {

@@ -88,6 +88,10 @@ const projects = {
     component: lazy(() => import("../components/ColorMixer")),
     title: "Color Mixer",
   },
+  21: {
+    component: lazy(() => import("../components/TrafficLights")),
+    title: "Traffic Lights",
+  },
 };
 
 const ProjectPage = () => {
