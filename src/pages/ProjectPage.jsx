@@ -84,6 +84,10 @@ const projects = {
     component: lazy(() => import("../components/Calculator")),
     title: "Calculator",
   },
+  20: {
+    component: lazy(() => import("../components/ColorMixer")),
+    title: "Color Mixer",
+  },
 };
 
 const ProjectPage = () => {
