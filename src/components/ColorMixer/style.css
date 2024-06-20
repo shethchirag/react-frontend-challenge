@@ -9,7 +9,6 @@
   border-radius: 25px;
 }
 .display-color-mix {
-  width: 100%;
   margin: 20px;
   background-color: gray;
   height: 300px;
@@ -19,6 +18,7 @@
   align-items: center;
   font-size: 30px;
   font-weight: 500;
+  color: white;
 }
 .color-picker {
   margin: auto;

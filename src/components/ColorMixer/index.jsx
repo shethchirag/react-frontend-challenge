@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./style.css";
 
 const ColorMixer = () => {
-  const [color1, setColor1] = useState("blue");
-  const [color2, setColor2] = useState("red");
+  const [color1, setColor1] = useState("#000000");
+  const [color2, setColor2] = useState("#000000");
   return (
     <div className="color-mixer-container">
       <div
@@ -21,6 +21,7 @@ const ColorMixer = () => {
           <input
             onChange={(e) => setColor1(e.target.value)}
             type="color"
+            value={color1}
             name="firstColor"
             id=""
           />
@@ -30,6 +31,7 @@ const ColorMixer = () => {
           <input
             onChange={(e) => setColor2(e.target.value)}
             type="color"
+            value={color2}
             name="secondColor"
             id=""
           />
@@ -38,8 +40,8 @@ const ColorMixer = () => {
       <div className="reset-btn-color">
         <button
           onClick={() => {
-            setColor1("blue");
-            setColor2("red");
+            setColor1("#000000");
+            setColor2("#000000");
           }}
           className="button-85"
           role="button"
