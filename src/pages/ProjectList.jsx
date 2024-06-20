@@ -113,6 +113,11 @@ const projects = [
     title: "Traffic Lights",
     description: "Traffic Lights",
   },
+  {
+    id: 22,
+    title: "Password Strength",
+    description: "Check Password Strength",
+  },
 ];
 
 const ProjectList = () => {

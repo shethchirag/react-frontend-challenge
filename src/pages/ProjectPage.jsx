@@ -92,6 +92,10 @@ const projects = {
     component: lazy(() => import("../components/TrafficLights")),
     title: "Traffic Lights",
   },
+  22: {
+    component: lazy(() => import("../components/PasswordStrength")),
+    title: "Password Strength",
+  },
 };
 
 const ProjectPage = () => {
