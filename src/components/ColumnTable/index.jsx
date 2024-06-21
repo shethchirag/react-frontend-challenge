@@ -28,7 +28,7 @@ const ColumnTable = () => {
     <div className="table-container">
       <div className="table-input">
         <div className="row-part">
-          <label htmlFor="row">Row</label>
+          <label htmlFor="row">Row : : {row}</label>
           <input
             onChange={(e) => {
               setRow(e.target.value);
@@ -36,19 +36,19 @@ const ColumnTable = () => {
             type="range"
             id="row"
             name="row"
-            min="2"
+            min="1"
             max="8"
             value={row}
           />
         </div>
         <div className="colum-part">
-          <label htmlFor="colum">colum</label>
+          <label htmlFor="colum">colum : : {colum}</label>
           <input
             onChange={(e) => setColum(e.target.value)}
             type="range"
             id="colum"
             name="colum"
-            min="2"
+            min="1"
             max="8"
             value={colum}
           />
