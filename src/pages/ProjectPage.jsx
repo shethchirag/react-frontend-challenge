@@ -96,6 +96,10 @@ const projects = {
     component: lazy(() => import("../components/PasswordStrength")),
     title: "Password Strength",
   },
+  23: {
+    component: lazy(() => import("../components/ColumnTable")),
+    title: "Column Table",
+  },
 };
 
 const ProjectPage = () => {

@@ -118,6 +118,11 @@ const projects = [
     title: "Password Strength",
     description: "Check Password Strength",
   },
+  {
+    id: 23,
+    title: "Column Table",
+    description: "Column Table",
+  },
 ];
 
 const ProjectList = () => {
