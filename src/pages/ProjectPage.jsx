@@ -100,6 +100,10 @@ const projects = {
     component: lazy(() => import("../components/ColumnTable")),
     title: "Column Table",
   },
+  24: {
+    component: lazy(() => import("../components/TodoList")),
+    title: "TodoList",
+  },
 };
 
 const ProjectPage = () => {

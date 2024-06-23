@@ -123,6 +123,11 @@ const projects = [
     title: "Column Table",
     description: "Column Table",
   },
+  {
+    id: 24,
+    title: "TodoList",
+    description: "Add Your Todo",
+  },
 ];
 
 const ProjectList = () => {

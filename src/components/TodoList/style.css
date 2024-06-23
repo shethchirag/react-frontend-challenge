@@ -1,0 +1,108 @@
+.todo-container {
+  max-width: 1000px;
+  margin: auto;
+  margin-block: 30px;
+}
+.TodoList {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.todo-list {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.todo-list ul {
+  padding: 0;
+}
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.todo-list {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.TodoList input {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  padding-inline: 10px;
+}
+.btn {
+  margin-block-start: 15px;
+  gap: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+p.p-text-message {
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+}
+.btn button {
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  background-color: rgb(0, 30, 128);
+  color: white;
+}
+
+.btn button:active {
+  transform: scale(0.95);
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  background-color: rgb(0, 128, 115);
+  color: white;
+  margin-inline-end: 10px;
+}
+.delete-btn,
+button.cancel {
+  background-color: red;
+}
+button.submit {
+  background-color: green;
+}
+
+.edit-btn:active,
+.delete-btn:active {
+  transform: scale(0.95);
+}
+li.todo-li span {
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.error-style {
+  color: red;
+  top: 100%;
+  margin: 0px;
+  text-align: left;
+  font-size: 11px;
+  margin-inline-start: 10px;
+}
+span.checked-text {
+  text-decoration: line-through;
+  color: slategray;
+  font-style: italic;
+}
