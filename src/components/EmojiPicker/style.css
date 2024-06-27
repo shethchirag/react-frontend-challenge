@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+.emoji-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-block: 40px;
+  padding: 7px;
+}
+.select-input select#emoji,
+.search-input input {
+  width: 100%;
+  height: 33px;
+  padding-inline: 10px;
+  border-radius: 10px;
+  margin-block: 5px;
+}
+.select-input select#emoji,
+.search-input input {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-inline: 25px;
+  transition: background-color 0.9s, color 0.9s, font-size 0.2s, transform 0.5s;
+}
+
+.select-input select#emoji:focus,
+.search-input input:focus {
+  outline: none;
+  background-color: black;
+  color: white;
+  transition: background-color 0.9s, font-size 0.2s, transform 0.5s;
+}
+.select-input select#emoji::placeholder .search-input input::placeholder {
+  color: black;
+  transition: color 0.9s, font-size 0.2s, transform 0.5s;
+}
+.inp-value:focus::placeholder,
+.search-input input:focus::placeholder {
+  color: white;
+  transition: color 0.9s, font-size 0.2s, transform 0.5s;
+}
+.emoji-display-container {
+  text-align: left;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.emoji-display-container span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.emoji-display-container span {
+  width: 45px;
+  height: 45px;
+
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.loading-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.emoji-display-container span {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  border-color: transparent;
+}
+.emoji-display-container span:hover {
+  border: 3px solid #757575;
+}
+/* width */
+.emoji-display-container::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+/* Track */
+.emoji-display-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.emoji-display-container::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+  height: 50px;
+}
+
+/* Handle on hover */
+.emoji-display-container::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

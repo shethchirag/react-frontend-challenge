@@ -128,6 +128,11 @@ const projects = [
     title: "TodoList",
     description: "Add Your Todo",
   },
+  {
+    id: 25,
+    title: "EmojiPicker",
+    description: "EmojiPicker",
+  },
 ];
 
 const ProjectList = () => {
