@@ -143,6 +143,11 @@ const projects = [
     title: "Stopwatch",
     description: "Stopwatch",
   },
+  {
+    id: 28,
+    title: "ProgressBar",
+    description: "ProgressBar",
+  },
 ];
 
 const ProjectList = () => {

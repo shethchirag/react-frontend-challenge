@@ -116,6 +116,10 @@ const projects = {
     component: lazy(() => import("../components/Stopwatch")),
     title: "Stopwatch",
   },
+  28: {
+    component: lazy(() => import("../components/Progressbar")),
+    title: "ProgressBar",
+  },
 };
 
 const ProjectPage = () => {
