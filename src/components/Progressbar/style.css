@@ -11,7 +11,7 @@
   padding: 18px;
 }
 .progress-bar-container {
-  width: 400px;
+  max-width: 400px;
   height: 20px4;
   height: 33px;
   background-color: #00000063;
