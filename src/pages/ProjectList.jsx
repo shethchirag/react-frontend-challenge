@@ -138,6 +138,11 @@ const projects = [
     title: "InvestmentCalculator",
     description: "InvestmentCalculator",
   },
+  {
+    id: 27,
+    title: "Stopwatch",
+    description: "Stopwatch",
+  },
 ];
 
 const ProjectList = () => {

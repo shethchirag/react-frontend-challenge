@@ -112,6 +112,10 @@ const projects = {
     component: lazy(() => import("../components/InvestmentCalculator")),
     title: "InvestmentCalculator",
   },
+  27: {
+    component: lazy(() => import("../components/Stopwatch")),
+    title: "Stopwatch",
+  },
 };
 
 const ProjectPage = () => {
