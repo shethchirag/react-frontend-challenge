@@ -133,6 +133,11 @@ const projects = [
     title: "EmojiPicker",
     description: "EmojiPicker",
   },
+  {
+    id: 26,
+    title: "InvestmentCalculator",
+    description: "InvestmentCalculator",
+  },
 ];
 
 const ProjectList = () => {

@@ -108,6 +108,10 @@ const projects = {
     component: lazy(() => import("../components/EmojiPicker")),
     title: "EmojiPicker",
   },
+  26: {
+    component: lazy(() => import("../components/InvestmentCalculator")),
+    title: "InvestmentCalculator",
+  },
 };
 
 const ProjectPage = () => {
