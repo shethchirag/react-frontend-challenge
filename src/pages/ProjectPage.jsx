@@ -120,6 +120,14 @@ const projects = {
     component: lazy(() => import("../components/Progressbar")),
     title: "ProgressBar",
   },
+  29: {
+    component: lazy(() => import("../components/Quiz")),
+    title: "Quiz",
+  },
+  30: {
+    component: lazy(() => import("../components/NestedDropdown")),
+    title: "NestedDropdown",
+  },
 };
 
 const ProjectPage = () => {

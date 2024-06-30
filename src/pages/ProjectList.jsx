@@ -148,6 +148,16 @@ const projects = [
     title: "ProgressBar",
     description: "ProgressBar",
   },
+  {
+    id: 29,
+    title: "Quiz",
+    description: "Quiz",
+  },
+  {
+    id: 30,
+    title: "NestedDropdown",
+    description: "NestedDropdown",
+  },
 ];
 
 const ProjectList = () => {

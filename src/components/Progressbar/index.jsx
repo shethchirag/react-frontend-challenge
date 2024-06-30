@@ -15,7 +15,6 @@ const ProgressBar = () => {
         };
         intervalRef.current = setInterval(widthCalc, 50 / Number(range));
       } else {
-        console.log("100%");
         clearInterval(intervalRef.current);
       }
     };
@@ -24,7 +23,6 @@ const ProgressBar = () => {
       clearInterval(intervalRef.current);
     };
   }, [width, progress, range]);
-  console.log(width);
 
   const startHandler = () => {
     setProgress(true);

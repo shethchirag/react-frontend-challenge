@@ -49,11 +49,6 @@
   margin-inline: 3px;
   margin-block: 20px;
 }
-input#progress {
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-}
 
 .progress-control-btn button:active {
   box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
@@ -61,6 +56,11 @@ input#progress {
     rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
     rgba(44, 187, 99, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
+}
+input#progress {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .progress-speed label {
   margin-top: 14px;
