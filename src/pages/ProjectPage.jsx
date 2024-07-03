@@ -132,6 +132,10 @@ const projects = {
     component: lazy(() => import("../components/FoodRecipe")),
     title: "FoodRecipe",
   },
+  32: {
+    component: lazy(() => import("../components/InfiniteScrolling")),
+    title: "InfiniteScrolling",
+  },
 };
 
 const ProjectPage = () => {

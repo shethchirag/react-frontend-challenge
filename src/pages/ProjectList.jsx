@@ -163,6 +163,11 @@ const projects = [
     title: "FoodRecipe",
     description: "FoodRecipe",
   },
+  {
+    id: 32,
+    title: "InfiniteScrolling",
+    description: "InfiniteScrolling",
+  },
 ];
 
 const ProjectList = () => {
