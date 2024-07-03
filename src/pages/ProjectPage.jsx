@@ -128,6 +128,10 @@ const projects = {
     component: lazy(() => import("../components/NestedDropdown")),
     title: "NestedDropdown",
   },
+  31: {
+    component: lazy(() => import("../components/FoodRecipe")),
+    title: "FoodRecipe",
+  },
 };
 
 const ProjectPage = () => {

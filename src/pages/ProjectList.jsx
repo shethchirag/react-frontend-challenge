@@ -158,6 +158,11 @@ const projects = [
     title: "NestedDropdown",
     description: "NestedDropdown",
   },
+  {
+    id: 31,
+    title: "FoodRecipe",
+    description: "FoodRecipe",
+  },
 ];
 
 const ProjectList = () => {
