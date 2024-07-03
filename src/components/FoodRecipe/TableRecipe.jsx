@@ -17,21 +17,23 @@ const TableRecipe = ({ imageData }) => {
   return (
     <div>
       <table style={{ width: "100%" }}>
-        <tr>
-          <td>No.</td>
-          <td>Ingredient</td>
-          <td>Measure</td>
-        </tr>
-        {renderData &&
-          renderData.map((data, index) => {
-            return (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{Object.keys(data)}</td>
-                <td>{Object.values(data)}</td>
-              </tr>
-            );
-          })}
+        <tbody>
+          <tr>
+            <td>No.</td>
+            <td>Ingredient</td>
+            <td>Measure</td>
+          </tr>
+          {renderData &&
+            renderData.map((data, index) => {
+              return (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{Object.keys(data)}</td>
+                  <td>{Object.values(data)}</td>
+                </tr>
+              );
+            })}
+        </tbody>
       </table>
     </div>
   );
