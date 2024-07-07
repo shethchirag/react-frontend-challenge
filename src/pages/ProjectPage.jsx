@@ -136,6 +136,10 @@ const projects = {
     component: lazy(() => import("../components/InfiniteScrolling")),
     title: "InfiniteScrolling",
   },
+  33: {
+    component: lazy(() => import("../components/PasswordGenerator")),
+    title: "PasswordGenerator",
+  },
 };
 
 const ProjectPage = () => {

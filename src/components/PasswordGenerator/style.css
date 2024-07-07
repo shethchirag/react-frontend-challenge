@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+.password-container {
+  background-color: #f1cffc;
+  padding: 0;
+  padding: 30px;
+  margin: 0;
+  -webkit-box-shadow: 0px 0px 34px 18px rgba(232, 208, 232, 1);
+  -moz-box-shadow: 0px 0px 34px 18px rgba(232, 208, 232, 1);
+  box-shadow: 0px 0px 34px 18px rgba(232, 208, 232, 1);
+}
+.password-main-part {
+  max-width: 1080px;
+  margin: auto;
+  padding: 10px;
+}
+
+.password-length,
+.lowercaseCharacter,
+.upperCharacter,
+.includeNumber,
+.includeSymbols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+  border-radius: 10px;
+  margin-block: 10px;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+}
+input#passwordLength {
+  width: 50%;
+  cursor: pointer;
+}
+.password-display input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding-inline: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+._fourth_section_6bcv0_47 button {
+  max-width: 200px;
+  width: 200px;
+  height: 40px;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+  margin-block: 20px;
+  margin-inline-end: 25px;
+}
+
+._fourth_section_6bcv0_47 button:hover {
+  border-radius: 5px;
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #f85959, 0 15px 0 -4px #39a2db,
+    0 16px 10px -3px #39a2db;
+}
+
+._fourth_section_6bcv0_47 button:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #f85959, 0 8px 0 -4px #39a2db,
+    0 12px 10px -3px #39a2db;
+}
+.third_section h4 {
+  display: inline;
+}
+p.pass-hint {
+  display: inline;
+  font-size: 18px;
+}
+._fourth_section_6bcv0_47 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.save-password {
+  outline: 2px solid black;
+  color: black;
+  width: 200px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+  margin-block: 20px;
+  margin-inline-end: 25px;
+  padding-inline: 12px;
+  padding-block: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+label {
+  margin-block: 5px;
+  display: inline-block;
+}
+table {
+  background: #012b39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #e2b842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4f5f64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+.table-container h3 {
+  text-align: center;
+}
+.save-password-input {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+.save-password-input input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-inline: 10px;
+}
+@media screen and (max-width: 1000px) {
+  ._fourth_section_6bcv0_47 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  ._fourth_section_6bcv0_47 button {
+    margin-inline-end: 0px;
+    /* margin: auto; */
+  }
+  .save-password {
+    margin-inline-end: 0px;
+  }
+  .third_section h4 {
+    display: block;
+    margin: 6px 0px;
+  }
+}

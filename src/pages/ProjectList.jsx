@@ -168,6 +168,11 @@ const projects = [
     title: "InfiniteScrolling",
     description: "InfiniteScrolling",
   },
+  {
+    id: 33,
+    title: "PasswordGenerator",
+    description: "PasswordGenerator",
+  },
 ];
 
 const ProjectList = () => {
