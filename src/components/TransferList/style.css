@@ -1,0 +1,35 @@
+.transferList-container {
+  max-width: 800px;
+  margin: auto;
+  margin-block: 25px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.transferPart-left,
+.transferPart-right {
+  outline: 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+}
+.transferContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.control-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+input#checkboxitem {
+  margin-inline: 5px;
+}
+.item input,
+label {
+  cursor: pointer;
+}

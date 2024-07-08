@@ -173,6 +173,11 @@ const projects = [
     title: "PasswordGenerator",
     description: "PasswordGenerator",
   },
+  {
+    id: 34,
+    title: "TransferList",
+    description: "TransferList",
+  },
 ];
 
 const ProjectList = () => {

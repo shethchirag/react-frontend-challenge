@@ -140,6 +140,10 @@ const projects = {
     component: lazy(() => import("../components/PasswordGenerator")),
     title: "PasswordGenerator",
   },
+  34: {
+    component: lazy(() => import("../components/TransferList")),
+    title: "TransferList",
+  },
 };
 
 const ProjectPage = () => {
