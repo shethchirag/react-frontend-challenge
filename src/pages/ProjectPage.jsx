@@ -144,6 +144,10 @@ const projects = {
     component: lazy(() => import("../components/TransferList")),
     title: "TransferList",
   },
+  35: {
+    component: lazy(() => import("../components/DragDrop")),
+    title: "DragDrop",
+  },
 };
 
 const ProjectPage = () => {

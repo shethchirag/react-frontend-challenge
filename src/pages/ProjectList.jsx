@@ -178,6 +178,11 @@ const projects = [
     title: "TransferList",
     description: "TransferList",
   },
+  {
+    id: 35,
+    title: "DragDrop",
+    description: "DragDrop",
+  },
 ];
 
 const ProjectList = () => {
