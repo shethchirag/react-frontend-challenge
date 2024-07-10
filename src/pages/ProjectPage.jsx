@@ -148,6 +148,10 @@ const projects = {
     component: lazy(() => import("../components/DragDrop")),
     title: "DragDrop",
   },
+  36: {
+    component: lazy(() => import("../components/WaterBalancer")),
+    title: "WaterBalancer",
+  },
 };
 
 const ProjectPage = () => {

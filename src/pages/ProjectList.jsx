@@ -183,6 +183,11 @@ const projects = [
     title: "DragDrop",
     description: "DragDrop",
   },
+  {
+    id: 36,
+    title: "WaterBalancer",
+    description: "WaterBalancer",
+  },
 ];
 
 const ProjectList = () => {
